@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h1 {
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="email"], input[type="password"], input[type="date"], input[type="file"], select, textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        select {
+            height: 40px;
+        }
+        textarea {
+            height: 100px;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #0073b1;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #005a87;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Register for LinkedIn</h1>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="profilePicture">Profile Picture (Optional):</label>
+                <input type="file" id="profilePicture" name="profilePicture">
+            </div>
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth (Optional):</label>
+                <input type="date" id="dob" name="dob">
+            </div>
+            <div class="form-group">
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">Select your country</option>
+                    <option value="us">United States</option>
+                    <option value="ca">Canada</option>
+                    <option value="gb">United Kingdom</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="industry">Industry:</label>
+                <select id="industry" name="industry" required>
+                    <option value="">Select your industry</option>
+                    <option value="it">Information Technology</option>b
+                    <option value="finance">Finance</option>
+                    <option value="education">Education</option>
+                </select> 
+            </div>
+
+            <div class="form-group">
+                <h2>Education (Optional)</h2>
+                <label for="degree">Degree Earned:</label>
+                <input type="text" id="degree" name="degree" placeholder="e.g., Bachelor of Science">
+            </div>
+            <div class="form-group">
+                <label for="institution">Institution Attended:</label>
+                <input type="text" id="institution" name="institution" placeholder="e.g., Harvard University">
+            </div>
+            <div class="form-group">
+                <label for="fieldOfStudy">Field of Study:</label>
+                <input type="text" id="fieldOfStudy" name="fieldOfStudy" placeholder="e.g., Computer Science">
+            </div>
+            
+            <div class="form-group">
+                <label for="achievements">Academic Achievements (Optional):</label>
+                <textarea id="achievements" name="achievements" placeholder="e.g., Graduated with Honors"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="currentJobTitle">Current Job Title (Optional):</label>
+                <input type="text" id="currentJobTitle" name="currentJobTitle" placeholder="e.g., Software Engineer">
+            </div>
+            <div class="form-group">
+                <label for="company">Company/Organization (Optional):</label>
+                <input type="text" id="company" name="company" placeholder="e.g., TechCorp">
+            </div>
+             
+            <div class="form-group">
+                <label for="skills">Professional Skills (Optional):</label>
+                <input type="text" id="skills" name="skills" placeholder="e.g., Python, Data Analysis">
+            </div>
+            <div class="form-group">
+                <label for="certifications">Certifications (Optional):</label>
+                <input type="text" id="certifications" name="certifications" placeholder="e.g., Certified Data Scientist">
+            </div>
+            <div class="form-group">
+                <label for="languages">Languages (Optional):</label>
+                <input type="text" id="languages" name="languages" placeholder="e.g., English, Spanish">
+            </div>
+            <div class="form-group">
+                <label for="volunteerExperience">Volunteer Experience (Optional):</label>
+                <textarea id="volunteerExperience" name="volunteerExperience" placeholder="e.g., Volunteered at local food bank."></textarea>
+            </div>
+            <div class="form-group">
+                <label for="projects">Projects (Optional):</label>
+                <textarea id="projects" name="projects" placeholder="e.g., Developed a web app for tracking personal goals."></textarea>
+            </div>
+            <div class="form-group">
+                <label for="website">Website/Portfolio (Optional):</label>
+                <input type="text" id="website" name="website" placeholder="e.g., www.myportfolio.com">
+            </div>
+            <div class="form-group">
+                <label for="socialMedia">Social Media Links (Optional):</label>
+                <input type="text" id="socialMedia" name="socialMedia" placeholder="e.g., LinkedIn, Twitter">
+            </div>
+            <div class="form-group">
+                <label for="referrals">Referrals/Recommendations (Optional):</label>
+                <textarea id="referrals" name="referrals" placeholder="e.g., John Doe, johndoe@example.com"></textarea>
+            </div>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+</body>
+</html>

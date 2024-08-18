@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Timetable</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #4c95af;
+            color: white;
+        }
+        td {
+            background-color: #f9f9f9;
+        }
+        .time {
+            background-color: #f2f2f2;
+            color: black;
+        }
+        h1 {
+            text-align: center;
+            color: rgb(44, 11, 42);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 10px; 
+            margin-top: 0; 
+        }
+        .highlight {
+            background-color: #4CAF50;
+            color: white; 
+            font-weight: bold;
+        }
+        .highlight td {
+            padding: 10px;
+            background-color: #4CAF50; 
+        }
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>MOHAN BABU UNIVERSITY</h1>
+    <h2>School of Computing</h2>
+    <h2>Department Of Data Science</h2>
+    <h2>Class Work Timetable (2024-25)</h2>
+    <h2>V Semester (Batch-2)(Ds4)</h2>
+    <p><b>Room no: 704</b></p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>HR/DAY</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="time">10:00 AM - 11:00 AM</td>
+                <td>DBMS</td>
+                <td>DAA</td>
+                <td>CC</td>
+                <td>LIB</td>
+                <td>ML</td>
+            </tr>
+            <tr>
+                <td class="time">11:00 AM - 12:00 PM</td>
+                <td>WT</td>
+                <td>DAA</td>
+                <td>EMSME<br>(MOOC)</td>
+                <td>ML</td>
+                <td>DBMS</td>
+            </tr>
+            <tr class="highlight">
+                <td class="time">12:00 PM - 12:30 PM</td>
+                <td colspan="5">Break</td>
+            </tr>
+            <tr>
+                <td class="time">1:10 PM - 3:10 PM</td>
+                <td>DBMS<br>(LAB)</td>
+                <td>WT<br>(LAB)</td>
+                <td>ML<br>(LAB)</td>
+                <td>DAA<br>(LAB)</td>
+                <td>CC<br>(LAB)</td>
+            </tr>
+            <tr>
+                <td class="time">3:30 PM - 4:30 PM</td>
+                <td>ML</td>
+                <td>CC</td>
+                <td>DAA</td>
+                <td>WT</td>
+                <td>PA<br>(MOOC)</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

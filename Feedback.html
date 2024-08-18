@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery Feedback Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
+        h1 {
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="email"], input[type="number"], textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        .form-group textarea {
+            height: 100px;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Food Delivery Feedback Form</h1>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="orderNumber">Order Number:</label>
+                <input type="text" id="orderNumber" name="orderNumber">
+            </div>
+            <div class="form-group">
+                <label for="deliveryDate">Delivery Date:</label>
+                <input type="Date" id="deliveryDate" name="deliveryDate">
+            </div>
+
+            <div class="form-group">
+                <label>Overall Experience:</label>
+                <label><input type="radio" name="overallExperience" value="Excellent"> Excellent</label>
+                <label><input type="radio" name="overallExperience" value="Good"> Good</label>
+                <label><input type="radio" name="overallExperience" value="Average"> Average</label>
+                <label><input type="radio" name="overallExperience" value="Poor"> Poor</label>
+                <label><input type="radio" name="overallExperience" value="Very Poor"> Very Poor</label>
+            </div>
+
+            <div class="form-group">
+                <label>Delivery Timeliness:</label>
+                <label><input type="radio" name="deliveryTimeliness" value="Yes"> Yes</label>
+                <label><input type="radio" name="deliveryTimeliness" value="No"> No</label>
+                <label for="lateness">If no, how late was the delivery?</label>
+                <input type="text" id="lateness" name="lateness">
+            </div>
+
+            <div class="form-group">
+                <label>Food Quality:</label>
+                <label><input type="radio" name="foodQuality" value="Excellent"> Excellent</label>
+                <label><input type="radio" name="foodQuality" value="Good"> Good</label>
+                <label><input type="radio" name="foodQuality" value="Average"> Average</label>
+                <label><input type="radio" name="foodQuality" value="Poor"> Poor</label>
+                <label><input type="radio" name="foodQuality" value="Very Poor"> Very Poor</label>
+            </div>
+
+            <div class="form-group">
+                <label>Packaging:</label>
+                <label><input type="radio" name="packaging" value="Excellent"> Excellent</label>
+                <label><input type="radio" name="packaging" value="Good"> Good</label>
+                <label><input type="radio" name="packaging" value="Average"> Average</label>
+                <label><input type="radio" name="packaging" value="Poor"> Poor</label>
+                <label><input type="radio" name="packaging" value="Very Poor"> Very Poor</label>
+            </div>
+
+            <div class="form-group">
+                <label>Value for Money:</label>
+                <label><input type="radio" name="valueForMoney" value="Poor"> Excellent</label>
+                <label><input type="radio" name="valueForMoney" value="Resonalble"> Good</label>
+                <label><input type="radio" name="valueForMoney" value="Excellent"> Average</label>
+                
+            </div>
+
+            <div class="form-group">
+                <label for="improvementSuggestions">Suggestions:</label>
+                <textarea id="improvementSuggestions" name="improvementSuggestions"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="additionalComments">Additional Comments:</label>
+                <textarea id="additionalComments" name="additionalComments"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="name">Name (Optional):</label>
+                <input type="text" id="name" name="name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email (Optional):</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone (Optional):</label>
+                <input type="text" id="phone" name="phone">
+            </div>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Registration Form</title>
+    <style>
+        h1 {
+            text-align: center;
+            color:black;
+            font-style: oblique;
+        }
+        h2{
+            text-align: left;
+            color:blue;
+            font-style: initial;
+        }
+        
+        .label {
+            font-size: 1.5rem;
+            padding: 0.5rem;
+            margin-bottom: 10px;
+            display: inline-block;
+            border-radius: 3px;
+            text-align: center;
+        }
+        input{
+            text-align: center;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Job Registration Form</h1>
+        
+        <h2>Personal Information</h2>
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" required><br><br>
+        
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" required><br><br>
+        
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob"><br><br>
+        
+        <h2>Contact Information </h2>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+        
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address"><br><br>
+        
+        <h2>Job-Related Information</h2>
+        <label for="position">Position Applied For:</label>
+        <input type="text" id="position" name="position" required><br><br>
+        
+        <label for="salary">Desired Salary:</label>
+        <input type="text" id="salary" name="salary"><br><br>
+        
+        <label for="startdate">Available Joinin g Date:</label>
+        <input type="date" id="startdate" name="startdate"><br><br>
+        
+        <h2>Education</h2>
+        <label for="degree">Highest Degree Obtained:</label>
+        <input type="text" id="degree" name="degree" required><br><br>
+        
+        <label for="institution">Institution Name:</label>
+        <input type="text" id="institution" name="institution" required><br><br>
+        
+        <label for="field">Field of Study:</label>
+        <input type="text" id="field" name="field" required><br><br>
+        
+        <label for="gradyear">Graduation Year:</label>
+        <input type="text" id="gradyear" name="gradyear" required><br><br>
+        
+        <h2>Work Experience</h2>
+        <label for="experience">Previous Experience:</label>
+        <textarea id="experience" name="experience" rows="4"></textarea><br><br>
+        
+        <h2>Skills</h2>
+        <label for="skills">Skills:</label>
+        <input type="text" id="skills" name="skills" required><br><br>
+        
+        <h2> Resume and Cover Letter</h2>
+        <label for="resume">Upload Resume:</label>
+        <input type="file" id="resume" name="resume" required><br><br>
+        
+        <label for="coverletter">Cover Letter:</label>
+        <textarea id="coverletter" name="coverletter" rows="4"></textarea>
+        
+        <h2> Additional Information</h2>
+        <label for="linkedin">LinkedIn Profile:</label>
+        <input type="url" id="linkedin" name="linkedin"><br><br>
+        
+        <label for="portfolio">Portfolio Link:</label>
+        <input type="url" id="portfolio" name="portfolio"><br><br>
+        
+        <h2>Reference</h2>
+        <label for="reference">Reference Name:</label>
+        <input type="text" id="reference" name="reference"><br><br>
+        
+        <label for="refcontact">Reference Contact Information:</label>
+        <input type="text" id="refcontact" name="refcontact">
+        
+        <label for="refrelationship">Relationship to Candidate:</label>
+        <input type="text" id="refrelationship" name="refrelationship"><br><br>
+        
+        <h2>Consent and Agreement</h2>
+        <label>
+            <input type="checkbox" name="consent" required>
+            I agree to the <a href="#">Data Privacy Policy</a><br><br>
+        </label>
+        
+        <label>
+            <input type="checkbox" name="terms" required>
+            I agree to the <a href="#">Terms and Conditions</a><br><br>
+        </label>
+        
+        <input type="submit" value="Submit Application">
+    </form>
+</body>
+</html>
