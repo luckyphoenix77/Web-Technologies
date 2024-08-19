@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Elon Musk Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h3 {
+            color: #2c3e50;
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background-color: #2980b9;
+            color: #fff;
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        li:hover {
+            background-color: #3498db;
+        }
+    </style> 
+    
+</head>
+<body>
+    <h3>Elon Musk Information</h3>
+    <ul>
+        <li id="name" onclick="displayDetail('name')" 
+            data-detail-type="Name: Elon Musk">
+            Name
+        </li>
+        
+        <li id="occupation" onclick="displayDetail('occupation')" 
+            data-detail-type="Occupation: Entrepreneur, Engineer">
+            Occupation
+        </li>
+        
+        <li id="dob" onclick="displayDetail('dob')" 
+            data-detail-type="Date of Birth: June 28, 1971">
+            Date of Birth
+        </li>
+        
+        <li id="nationality" onclick="displayDetail('nationality')" 
+            data-detail-type="Nationality: South African, Canadian, American">
+            Nationality
+        </li>
+        
+        <li id="companies" onclick="displayDetail('companies')" 
+            data-detail-type="Companies: Tesla, SpaceX, Neuralink, The Boring Company">
+            Companies Founded
+        </li>
+        
+        <li id="achievements" onclick="displayDetail('achievements')" 
+            data-detail-type="Notable Achievements: Revolutionized electric vehicles, Private space exploration, Hyperloop concept">
+            Notable Achievements
+        </li>
+    </ul>
+    
+    <script>
+        function displayDetail(elementId) {
+            // Get the element by its ID
+            var element = document.getElementById(elementId);
+            
+            // Get the value of the data-detail-type attribute
+            var detailType = element.getAttribute("data-detail-type");
+            
+            // Display an alert with the detail type
+            alert(detailType);
+        }
+    </script>
+</body>
+</html>
+ nii code ra
